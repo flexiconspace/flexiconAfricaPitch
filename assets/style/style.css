@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab:wght@100;200;300&display=swap');
+
+/*################################# CSS VARIABLES  #################################*/
+:root {
+  --header-height: 8vh;
+  --header-height-half: 5vh;
+  --max-width: 1500px;
+  --min-width: 320px;
+  /* Colors */
+  --hue-dark: 210;
+  --hue-light: 0;
+  --dark-color: hsl(var(--hue-dark), 33%, 9%);
+  --dark-color-alt: hsl(var(--hue-dark), 33%, 14%);
+  --light-color: hsl(var(--hue-light), 0%, 94%);
+  --light-color-alt: hsl(var(--hue-light), 0%, 80%);
+  --mars-color: hsl(356, 66%, 45%);
+  --mars-color-alt: hsl(0, 60%, 50%);
+  --mars-color-dark: hsl(356, 99%, 26%);
+  --white-color: #fff;
+  --black-color: #000;
+
+  /* Fonts sizes */
+  --text-font: 'Roboto Slab', serif;
+  --headline-font: 'Orbitron', sans-serif;
+
+  --h1-size: clamp(2.617rem, 1.907rem + 3.5498vw, 5.235rem);
+  --h2-size: clamp(1.618rem, 1.1792rem + 2.1939vw, 3.236rem);
+
+  --normal-font: clamp(1rem, 0.7288rem + 1.3559vw, 2rem);
+  --small-font: clamp(0.8rem, 0.6818rem + 0.5912vw, 1.236rem);
+  --logo-size: 2rem;
+
+  --menu-speed: 0.75s;
+}
+
+/*################################# HTML LAYOUT  #################################*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+
+  font-family: var(--headline-font);
+  color: var(--light-color);
+  background: var(--black-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  padding: var(--header-height) 1rem;
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  background-color: var(--black-color);
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: stretch;
+
+  height: auto;
+  min-height: 29vh;
+  padding: 0.5rem;
+
+  opacity: 0.95;
+  transition: all 0.3s ease-in;
+}
+
+section > div:hover {
+  opacity: 1;
+  transform: scale(0.98);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+/*################################# TYPOGRAPHY  #################################*/
+h1,
+h2,
+h3 {
+  font-family: var(--headline-font);
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+h1 {
+  font-size: var(--h1-size);
+  width: 100%;
+  margin: 15px 0px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  width: 100%;
+  margin: 5px 0px;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: var(--normal-font);
+  width: 100%;
+  margin: 5px 0px;
+  letter-spacing: 0.04em;
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+
+p {
+  font-family: var(--text-font);
+  font-size: var(--normal-font);
+  font-weight: 400;
+  color: var(--light-color);
+  width: 100%;
+  text-align: left;
+  letter-spacing: 0.05em;
+  margin: 5px 0px;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+/*################################# Reusable CSS classes #################################*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.italic {
+  font-style: italic;
+  letter-spacing: 0.07em;
+  font-size: var(--small-font);
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: var(--black-color);
+  color: var(--light-color);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--black-color);
+  color: white;
+  transform: rotateY(180deg);
+  text-align: left;
+}
+
+/*################################# FOOTER #################################*/
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 1rem;
+}
+
+/*################################# Backgrounds #################################*/
+.bg1 {
+  background: url('/assets/img/pexels-mostafa-el-shershaby-3772630.jpg');
+  background-size: cover;
+}
+
+.bg2 {
+  background: url('/assets/img/pexels-taryn-elliott-3889826.jpg');
+  background-size: cover;
+}
+
+.bg3 {
+  background: url('/assets/img/pexels-zakaria-boumliha-2827374.jpg');
+  background-size: cover;
+}
+
+.bgMars {
+  background: url('/assets/img/pexels-alex-azabache-3250364.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgMoon {
+  background: url('/assets/img/pexels-mario-cuadros-4608979.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*################################# Examples #################################*/
+/*################################# Examples #################################*/
+/*################################# Examples #################################*/
