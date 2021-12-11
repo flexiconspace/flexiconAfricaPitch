@@ -6,28 +6,54 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/* 1) find why query selector is blocked??
-2) do it more elegant way
- */
-document.getElementById('nav1').onclick = function () {
-  document.getElementById('check').checked = false
+function scrollUp1() {
+  const scrollUp1 = document.getElementById('scroll-up1')
+  if (this.scrollY >= 250) scrollUp1.classList.add('show-scroll1')
+  else scrollUp1.classList.remove('show-scroll1')
 }
+window.addEventListener('scroll', scrollUp1)
 
-document.getElementById('nav2').onclick = function () {
-  document.getElementById('check').checked = false
+function scrollUp2() {
+  const scrollUp2 = document.getElementById('scroll-up2')
+  if (this.scrollY >= 250) scrollUp2.classList.add('show-scroll2')
+  else scrollUp2.classList.remove('show-scroll2')
 }
+window.addEventListener('scroll', scrollUp2)
 
-document.getElementById('nav3').onclick = function () {
-  document.getElementById('check').checked = false
+function scrollUp3() {
+  const scrollUp3 = document.getElementById('scroll-up3')
+  if (this.scrollY >= 250) scrollUp3.classList.add('show-scroll3')
+  else scrollUp3.classList.remove('show-scroll3')
 }
+window.addEventListener('scroll', scrollUp3)
 
-document.getElementById('nav4').onclick = function () {
-  document.getElementById('check').checked = false
+function scrollUp4() {
+  const scrollUp4 = document.getElementById('scroll-up4')
+  if (this.scrollY >= 250) scrollUp4.classList.add('show-scroll4')
+  else scrollUp4.classList.remove('show-scroll4')
 }
+window.addEventListener('scroll', scrollUp4)
 
-document.getElementById('nav5').onclick = function () {
-  document.getElementById('check').checked = false
+function scrollUp5() {
+  const scrollUp5 = document.getElementById('scroll-up5')
+  if (this.scrollY >= 250) scrollUp5.classList.add('show-scroll5')
+  else scrollUp5.classList.remove('show-scroll5')
 }
+window.addEventListener('scroll', scrollUp5)
+
+function scrollUp6() {
+  const scrollUp6 = document.getElementById('scroll-up6')
+  if (this.scrollY >= 250) scrollUp6.classList.add('show-scroll6')
+  else scrollUp6.classList.remove('show-scroll6')
+}
+window.addEventListener('scroll', scrollUp6)
+
+function scrollUp7() {
+  const scrollUp7 = document.getElementById('scroll-up7')
+  if (this.scrollY >= 250) scrollUp7.classList.add('show-scroll7')
+  else scrollUp7.classList.remove('show-scroll7')
+}
+window.addEventListener('scroll', scrollUp7)
 
 // var imgArray = [
 //   'assets/img/carousel/3dPrint.mp4',

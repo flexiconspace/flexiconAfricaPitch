@@ -256,6 +256,214 @@ p {
   bottom: 1rem;
 }
 
+/*################################# scroll_1 #################################*/
+
+.scrollup1 {
+  position: fixed;
+  left: 1rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup1:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll1 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_2 #################################*/
+
+.scrollup2 {
+  position: fixed;
+  left: 3.5rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup2:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll2 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_3 #################################*/
+
+.scrollup3 {
+  position: fixed;
+  left: 6rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup3:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll3 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_4 #################################*/
+
+.scrollup4 {
+  position: fixed;
+  left: 8.5rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup4:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll4 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_5 #################################*/
+
+.scrollup5 {
+  position: fixed;
+  left: 11rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup5:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll5 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_6 #################################*/
+.scrollup6 {
+  position: fixed;
+  left: 13.5rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup6:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll6 {
+  bottom: 1rem;
+}
+
+/*################################# scroll_7 #################################*/
+.scrollup7 {
+  position: fixed;
+  left: 16rem;
+  bottom: -4rem;
+  display: flex;
+  background-color: var(--black-color);
+
+  box-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.02em -0.03em 0 rgba(0, 255, 0, 0.75),
+    0.02em 0.03em 0 rgba(0, 0, 255, 0.75);
+  padding: 0.45rem;
+  z-index: 100;
+  transition: 0.4s;
+}
+
+.scrollup7:hover {
+  background-color: var(--black-color);
+  color: var(--mars-color-alt);
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll7 {
+  bottom: 1rem;
+}
+
 /*################################# Backgrounds #################################*/
 .bg1 {
   background: url('/assets/img/pexels-mostafa-el-shershaby-3772630.jpg');
