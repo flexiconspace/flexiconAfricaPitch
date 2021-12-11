@@ -260,16 +260,25 @@ p {
 .bg1 {
   background: url('/assets/img/pexels-mostafa-el-shershaby-3772630.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .bg2 {
   background: url('/assets/img/pexels-taryn-elliott-3889826.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .bg3 {
+  background: url('/assets/img/piramids.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg4 {
   background: url('/assets/img/pexels-zakaria-boumliha-2827374.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .bgMars {
@@ -280,6 +289,12 @@ p {
 
 .bgMoon {
   background: url('/assets/img/pexels-mario-cuadros-4608979.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgLagos {
+  background: url('/assets/img/lagos.png');
   background-size: cover;
   background-attachment: fixed;
 }
