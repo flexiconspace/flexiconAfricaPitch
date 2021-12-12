@@ -41,6 +41,22 @@
   z-index: 1;
 }
 
+.dots {
+  margin-bottom: 2rem;
+}
+
+.dot {
+  height: 8rem;
+  width: 8rem;
+  margin: 0 0.5rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0.08em 0 0 rgba(255, 0, 0, 0.75),
+    -0.09em -0.14em 0 rgba(0, 255, 0, 0.75),
+    0.06em 0.09em 0 rgba(255, 255, 0, 0.75);
+}
+
 /*################################# ABOUT_US#################################*/
 
 #about-us {
@@ -160,6 +176,12 @@
   height: 100vh;
 }
 
+#prototype > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 #prototype > div:nth-of-type(1) {
   grid-column: 1/4;
   grid-row: 1/2;
@@ -192,7 +214,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: stretch;
-  padding: 0 3rem;
+  padding: 0 0 0 2rem;
 }
 
 #advantages li {

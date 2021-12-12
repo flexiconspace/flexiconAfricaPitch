@@ -55,6 +55,20 @@ function scrollUp7() {
 }
 window.addEventListener('scroll', scrollUp7)
 
+function scrollUp8() {
+  const scrollUp8 = document.getElementById('scroll-up8')
+  if (this.scrollY >= 250) scrollUp8.classList.add('show-scroll8')
+  else scrollUp8.classList.remove('show-scroll8')
+}
+window.addEventListener('scroll', scrollUp8)
+
+function scrollUp9() {
+  const scrollUp9 = document.getElementById('scroll-up9')
+  if (this.scrollY >= 250) scrollUp9.classList.add('show-scroll9')
+  else scrollUp9.classList.remove('show-scroll9')
+}
+window.addEventListener('scroll', scrollUp9)
+
 // var imgArray = [
 //   'assets/img/carousel/3dPrint.mp4',
 //   'assets/img/carousel/3dPrint2.mp4',
