@@ -168,7 +168,11 @@
 
 #productIdea > div:nth-of-type(2) {
   grid-column: 2;
-  grid-row: 2/4;
+  grid-row: 2/3;
+}
+#productIdea > div:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 3/4;
 }
 
 /*################################# prototype #################################*/
@@ -189,7 +193,12 @@
 
 #prototype > div:nth-of-type(2) {
   grid-column: 2;
-  grid-row: 2/4;
+  grid-row: 2/3;
+}
+
+#prototype > div:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 3/4;
 }
 
 /*################################# 3dprint #################################*/
@@ -205,6 +214,13 @@
 #print > div:nth-of-type(2) {
   grid-column: 2;
   grid-row: 2/4;
+}
+
+#print video {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 30vw;
+  object-fit: cover;
 }
 
 /*################################# Advantages #################################*/
