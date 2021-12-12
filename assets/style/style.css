@@ -582,6 +582,38 @@ p {
   background-size: cover;
 }
 
+.bgProduct {
+  background: url('/assets/img/shapes/Torus_geom.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgProduct2 {
+  background: url('/assets/img/shapes/proto_background.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgPro1 {
+  background: url('/assets/img/shapes/anti-flood_mechanism.jpeg');
+  background-size: cover;
+}
+
+.bgPro2 {
+  background: url('/assets/img/shapes/3d_module.jpeg');
+  background-size: cover;
+}
+
+.bgPro3 {
+  background: url('/assets/img/shapes/side_view_flexicon_africa.jpeg');
+  background-size: cover;
+}
+
+.bgPro4 {
+  background: url('/assets/img/shapes/plan_view_with_furniture.jpeg');
+  background-size: cover;
+}
+
 /*################################# Examples #################################*/
 /*################################# Examples #################################*/
 /*################################# Examples #################################*/
