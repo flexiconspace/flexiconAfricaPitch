@@ -106,7 +106,19 @@ section > div:hover {
 }
 
 ul {
-  list-style: none;
+  list-style: disc;
+  font-family: var(--text-font);
+  font-size: var(--normal-font);
+  font-weight: 400;
+  color: var(--light-color);
+  width: 100%;
+  letter-spacing: 0.05em;
+  padding-left: 2rem;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+li {
+  margin-top: 1.5rem;
 }
 
 a {
@@ -505,6 +517,11 @@ p {
   background: url('/assets/img/lagos.png');
   background-size: cover;
   background-attachment: fixed;
+}
+
+.bgPop {
+  background: url('/assets/img/population.png');
+  background-size: cover;
 }
 
 /*################################# Examples #################################*/
